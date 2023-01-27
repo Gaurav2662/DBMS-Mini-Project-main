@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FlipZon</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='shopping-cart.png')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="{{url_for('static', filename='rp.css')}}" rel="stylesheet" type="text/css">
+</head>
+
+<body class="grad">
+    <div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <img src="{{url_for('static', filename='shopping-cart.png')}}" align="left" width="60" height="60" />
+                <a class="navbar-brand" href="/"><b>FlipZon</b></a>
+                <a class="navbar-brand" href="/Home"><b>Home</b></a>
+                <a class="navbar-brand" href="/Contact Us"><b>Contact Us</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                </div>
+            </div>
+            <!-- <form class="grid" action="/mobiles" method="POST">
+                {% if name %}
+                <center>
+                  <h3 style="color: #F98B1D;" class="let_space">{{name}}&nbsp;</h3>
+                </center>
+                {% endif %}
+              </form> -->
+            <img src="{{url_for('static', filename='user.png')}}" align="right" width="40" height="40" />
+            <p>&nbsp;</p>
+        </nav>
+        <div class="div1">
+            <ul>
+                <li><a href=""><img src="{{url_for('static', filename='Kookaburra_sports_logo.png')}}" align="right"/></a></li>
+                <li><a href=""><img src="{{url_for('static', filename='SG.png')}}" align="right"/></a></li>
+                <li><a href=""><img src="{{url_for('static', filename='Nivia.png')}}" align="right"/></a></li>
+                <li><a href=""><img src="{{url_for('static', filename='Spalding.png')}}" align="right"/></a></li>
+                <li><a href=""><img src="{{url_for('static', filename='Yonex.png')}}" align="right"/></a></li>
+            </ul>
+            <!-- <label class="tsize"><strong>Samsung</strong></label>
+            <label class="tsize"><strong>Apple</strong></label>
+            <label class="tsize"><strong>OnePlus</strong></label>
+            <label class="tsize"><strong>Redmi</strong></label>
+            <label class="tsize"><strong>Motorola</strong></label> -->
+            <hr>
+        </div>
+        <div class="divm">
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='Chess-(Board+Coins).png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 849</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Chess Board Set</strong></p>
+                        <p>Material: Wood</p>
+                        <p>Gener: Strategy</p>
+                        <p>Dimensions: 17.8x8.9x4 cm</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='Kookaburra-Ball.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 959</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Kookaburra Syntehtic Cricket Ball</strong></p>
+                        <p>Material: Synthetic</p>
+                        <p>Color: Red</p>
+                        <p>Weight: 0.15Kg</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='Kookaburra-Bat-1.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 2,980</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Kookaburra Kahuna Pro 40</strong></p>
+                        <p>Size: Short Handle</p>
+                        <!-- <p>Sport: Cricket</p> -->
+                        <p>Material: Kashmir-Willow</p>
+                        <p>Color: Red</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='Kookaburra-Bat-2.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 11,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Kookaburra SD Pro</strong></p>
+                        <p>Size: 33.7 inches</p>
+                        <!-- <p>Sport: Cricket</p> -->
+                        <p>Material: English Willow</p>
+                        <p>Color: Green</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='Nivia-Football.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 989</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Nivia Shining Star</strong></p>
+                        <p>Material: Rubber</p>
+                        <!-- <p>Sport: Football</p> -->
+                        <p>Color: Blue & White</p>
+                        <p>Weight: 500g</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='Nivia-Shuttlecock.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 449</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Nivia Shuttlecock</strong></p>
+                        <p>Pack of 6</p>
+                        <p>Color: White</p>
+                        <p>Material: Nylon</p>
+                        <p>Gauge: 0.70mm/21ga</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='Nivia-Vollyball.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 1,245</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Nivia Vollyball</strong></p>
+                        <p>Material: Leather</p>
+                        <p>Weight: 280 Grams</p>
+                        <p>Color: Multicolor</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='SG-Bat.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 1,749</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>SG RSD Spark</strong></p>
+                        <p>Size: 6</p>
+                        <p>Sport: Cricket</p>
+                        <p>Material: Kashmir Willow</p>
+                        <p>Color: Red</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='SG-Batter-Glove-1.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 699</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>SG Ecolite Gloves</strong></p>
+                        <p>Material: Cotton</p>
+                        <p>Glove Type: Cricket</p>
+                        <p>Hand Orientation: Right</p>
+                        <p>Weight: 0.23kg</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='SG-Batter-Glove-2.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 749</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>SG Ecolite Gloves(Assorted)</strong></p>
+                        <p>Material: Faux Leather</p>
+                        <p>Sport: Cricket</p>
+                        <p>Hand Orientation: Right</p>
+                        <p>Weight: 0.25kg</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='Spalding-Basket.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 2,899</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Spalding Basketball Ring+Stand</strong></p>
+                        <p>Material: Iron</p>
+                        <p>Weight: 4.5Kg</p>
+                        <p>Frame Material: Stainless Steel</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='Spalding-Basket-Ball-1.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 1,799</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Spalding NBA Velocity</strong></p>
+                        <p>Material: Composite</p>
+                        <p>Number of Items: 1</p>
+                        <p>Color: Brown</p>
+                        <p>Weight: 0.907Kg</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='Spalding-Basket-Ball-2.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 1,399</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Spalding LA Lakers</strong></p>
+                        <p>Material: Synthetic</p>
+                        <p>Color: Yellow & Purple</p>
+                        <p>Weight: 0.58Kg</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='Table-Tennis.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 449</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>STAG Table Tennis Playset</strong></p>
+                        <p>Material: Wood</p>
+                        <p>Color: Multicolor</p>
+                        <p>Weight: 350g</p>
+                        <p>Items: 2Racquets & 1Ball</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='Yonex-Racket-Combo.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 779</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Yonex GR 303</strong></p>
+                        <p>Set of 2</p>
+                        <p>Weight: 2x75g</p>
+                        <p>Grip Size: 4.5 inches</p>
+                        <p>Material: Graphite</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="divb4">
+                <div><img src="{{url_for('static', filename='Yonex-Shuttle.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 1,899</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Yonex Nanoray Light 18i</strong></p>
+                        <p>Material: Graphite</p>
+                        <p>Size: G4-5U</p>
+                        <p>Weight: 75-79.9g</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb4">
+                <div><img src="{{url_for('static', filename='coming-soon-1.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. ??????</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Redmi 11T Pro 5G</strong></p>
+                        <p>Color: Meteorite Black</p>
+                        <p>RAM|ROM: 12GB|256GB</p>
+                        <p>Rear Camera|Front Camera: 108MP + 8MP + 5MP|16MP</p>
+                        <p>Battery: 5000mAh</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb4">
+                <div><img src="{{url_for('static', filename='coming-soon-1.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. ??????</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Moto Edge g30 Ultra</strong></p>
+                        <p>Color: Starlight White</p>
+                        <p>RAM|ROM: 12GB|256GB</p>
+                        <p>Rear Camera|Front Camera: 200MP + 50MP + 12MP|60MP</p>
+                        <p>Battery: 4610mAh</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb4">
+                <div><img src="{{url_for('static', filename='coming-soon-1.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. ??????<p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Moto g62 5G</strong></p>
+                        <p>Color: Frosted Blue</p>
+                        <p>RAM|ROM: 8GB|128GB</p>
+                        <p>Rear Camera|Front Camera: 50MP + 8MP + 2MP|16MP</p>
+                        <p>Battery: 5000mAh</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb4">
+                <div><img src="{{url_for('static', filename='coming-soon-1.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. ??????</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </ul>
+                </div>
+            </div>
+            <div id="btn">
+                <a href="/mobiles"><button>1</button></a>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

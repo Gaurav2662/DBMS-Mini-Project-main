@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FlipZon</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='shopping-cart.png')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="{{url_for('static', filename='rp.css')}}" rel="stylesheet" type="text/css">
+</head>
+
+<body class="grad">
+    <div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <img src="{{url_for('static', filename='shopping-cart.png')}}" align="left" width="60" height="60" />
+                <a class="navbar-brand" href="/"><b>FlipZon</b></a>
+                <a class="navbar-brand" href="/Home"><b>Home</b></a>
+                <a class="navbar-brand" href="/Contact Us"><b>Contact Us</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                </div>
+            </div>
+            <!-- <form class="grid" action="/mobiles" method="POST">
+                {% if name %}
+                <center>
+                  <h3 style="color: #F98B1D;" class="let_space">{{name}}&nbsp;</h3>
+                </center>
+                {% endif %}
+              </form> -->
+            <img src="{{url_for('static', filename='user.png')}}" align="right" width="40" height="40" />
+            <p>&nbsp;</p>
+        </nav>
+        <div class="div1">
+            <ul>
+                <li><a href=""><img src="{{url_for('static', filename='jbl.png')}}" align="right"/></a></li>
+                <li><a href=""><img src="{{url_for('static', filename='sony.png')}}" align="right"/></a></li>
+                <li><a href=""><img src="{{url_for('static', filename='oneplus.png')}}" align="right"/></a></li>
+                <li><a href=""><img src="{{url_for('static', filename='xiaomi-33355.png')}}" align="right"/></a></li>
+                <li><a href=""><img src="{{url_for('static', filename='samsung.png')}}" align="right"/></a></li>
+            </ul>
+            <!-- <label class="tsize"><strong>Samsung</strong></label>
+            <label class="tsize"><strong>Apple</strong></label>
+            <label class="tsize"><strong>OnePlus</strong></label>
+            <label class="tsize"><strong>Redmi</strong></label>
+            <label class="tsize"><strong>Motorola</strong></label> -->
+            <hr>
+        </div>
+        <div class="divm">
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='airpodes.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 26,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Apple Airpodes</strong></p>
+                        <p>Color: White</p>
+                        <p>Automatically on, automatically connected</p>
+                        <p>Easy setup for all your Apple devices<br>Quick access to Siri by saying “Hey Siri”</p>
+                        <p>Rich, high-quality audio and voice</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='apple watch.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 35,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Apple Watch SE (GPS + Cellular, 44mm) - Silver Aluminium Case with White Sport Band - Regular</strong></p>
+                        <p>Color: Silver Frame With White Band</p>
+                        <p>Style: GPS + Cellular</p>
+                        <p>Whats in the box: Case, Band, 1m Magnetic Charger to USB-C Cable</p>
+                        <p>Display: Retina display 30% larger than Series 3</p>
+                        <p>Processor: 64-bit dual core S5 processor, Up to 2x faster than S3 processor</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='boombox.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 23,990</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>JBL Boombox 2 | Wireless Portable Bluetooth Speaker | Massive 24Hrs Playtime | Monstrous Sound with Powerful Bass | Built-in Powerbank PartyBoost | IPX7 | BT 5.1 | AUX (Black)
+                        </strong></p>
+                        <p>Color: Black</p>
+                        <p>Product Dimensions: 48.4 x 20.1 x 25.6 cm; 5.91 Kilograms</p>
+                        <p>Batteries: 1 Lithium Polymer batteries required. (included)</p>
+                        <p>Special Features: Personalize with JBL Portable App;IPX7 Waterproof;Monstrous Sound with Deep & Powerful Bass;Bluetooth 5.1;PartyBoost Function</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='hairdryer.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 3,000</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Remington 1875 Watts Compact Hair Dryer (D5000), Black</strong></p>
+                        <p>Product Dimensions : 15 x 8 x 25 cm; 600 Grams</p>
+                        <p>Product Dimensions : 15 x 8 x 25 cm; 600 Grams</p>
+                        <p>Eco Setting - Using dryer on the mid heat setting saves more energy than using it on the high heat setting</p>
+                        <p>1800 Watt,3 heat and 2 speed settings</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='jbl headphone.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs.7,490</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>JBL T460BT by Harman, Wireless On Ear Headphones with Mic, Pure Bass, Portable, Lightweight & Flat Foldable, Voice Assistant Support for Mobiles</strong></p>
+                        <p>Color: Blue</p>
+                        <p>Superior listening experience with JBL Pure Bass sound,Wireless Bluetooth Streaming</p>
+                        <p>11 hours of playtime under optimum audio settings, Call and music controls on earcup, Sweat Proof - Yes</p>
+                        <p>What's in the box : 1 pair of T460BT headphone, 1 x Charging cable, 1 x Warning Card, 1 x Warranty card, 1 x Safety card, 1 x QSG</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='mic.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 1,700</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Shure MV7 USB Podcast Microphone for Podcasting, Recording, Live Streaming & Gaming, TeamSpeak Certified - Black</strong></p>
+                        <p>Color: Balck and gold</p>
+                        <p> Voice-Isolating Technology</p>
+                        <p>All Metal USB/XLR Dynamic Mic</p>
+                        <p> Built-in Headphone Output</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='neckband.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 3,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>CrossBeats Shuffl Neckband Environmental Noise Cancelling 13mm Drivers</strong></p>
+                        <p>Color: Carbon Black</p>
+                        <p>Fast Charging with SnapCharge</p>
+                        <p>Up to 72Hrs Playtime 40ms Low Latency Earphone</p>
+                        <p>ENC Mode, AI Voice Assistant, 13 mm Dynamic Drivers, Built-in Subwoofer</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='trimmer.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 5,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Wahl Corded Super Taper Hair Clipper, 6000 rpm; 1-2 mm cutting length, 4 Guide Combs (3mm-13mm), Designed for Tapering</strong></p>
+                        <p>Color: White</p>
+                        <p>6000rpm V5000 electromagnetic motor</p>
+                        <p>Taper Blades for easy C-stroke due to 21-degree angle ultimately designed for Tapering.</p>
+                        <p>4 Guide combs (3 mm to 13 mm)</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='tv.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 35,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Samsung 163 cm (65 inches) Crystal 4K Series Ultra HD Smart LED TV</strong></p>
+                        <p>Color: Black</p>
+                        <p>Screen Size	65 Inches</p>
+                        <p>Resolution : Crystal 4K UHD (3840 x 2160) resolution | Refresh Rate : 60 Hertz</p>
+                        <p>Display: Ultra HD (4k) LED Panel | One Billion Colors | Air Slim Design | Supports HDR 10+ | PurColor | Mega Contarst | UHD Dimming | Auto Game Mode</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='lgtv.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 1,51,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>LG 164 cm (65 inches) 4K Ultra HD Smart OLED TV 65A2PSA (Rocky Black)</strong></p>
+                        <p>Color: Rocky Black</p>
+                        <p>Screen Size : 65 Inches</p>
+                        <p>Supported Internet Services : Netflix, Prime Video, Zee5, Many more, Voot, SonyLIV, Discovery+, Youtube, YuppTV, Apple TV, Disney+ HotstarNetflix, Prime Video, Zee5, Many more, Voot, SonyLIV, Discovery+, Youtube, YuppTV, Apple TV, Disney+ Hotstar</p>
+                        <p>Resolution: 4K Ultra HD (3840x2160) | AI 4K Upscale</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='pulse.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 16,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>JBL Pulse 4 Portable Bluetooth Speaker with 360-Degree LED Lightshow,12Hours Playtime, PartyBoost & IPX7 Waterproof(Black)</strong></p>
+                        <p>Color: Phantom Blue</p>
+                        <p>High-resolution 360-degree LED Lightshow</p>
+                        <p>Peak Power Handling - Speakers : 20 Watts</p>
+                        <p>12Hours Playtime, PartyBoost & IPX7 Waterproof</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='jblstone.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 3,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>JBL Go 2, Wireless Portable Bluetooth Speaker with Mic, Signature Sound, Vibrant Color Options with IPX7 Waterproof & AUX (Black)</strong></p>
+                        <p>Color: Meteorite Black</p>
+                        <p>JBL Signature Sound. Memory Card Slot : No</p>
+                        <p>5 Hours of Playtime under optimum audio settings</p>
+                        <p>Wireless Bluetooth Streaming, IPX7 Waterproof design, Built-in Noise-cancelling Speakerphone</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='calci.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 1,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Casio FX-50f Plus-2nd Edition Scientific Calculator</strong></p>
+                        <p>Color: Grey</p>
+                        <p>Brand : Casio</p>
+                        <p>Calculator Type : Engineering/Scientific</p>
+                        <p>Power Source : Solar, Battery</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='duracell.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs.299</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Duracell Rechargeable AA 1300mAh Batteries, 4Pcs</strong></p>
+                        <p>Number of Batteries : 4 AA batteries required.</p>
+                        <p>Battery Cell Composition	Alkaline</p>
+                        <p>Duracell Rechargeable AA 1300mAh batteries stay charged for up to 12 months, when not in use</p>
+                        <p>Unused Duracell Recharge Ultra batteries are guaranteed to last 5 years and Guarantee starts from the Date of Purchase</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='coming-soon-1.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. ??????</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </ul>
+                </div>
+            </div>
+            <div id="btn">
+                <a href="/mobiles"><button>1</button></a>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

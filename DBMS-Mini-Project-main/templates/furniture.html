@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FlipZon</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='shopping-cart.png')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="{{url_for('static', filename='rp.css')}}" rel="stylesheet" type="text/css">
+</head>
+
+<body class="grad">
+    <div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <img src="{{url_for('static', filename='shopping-cart.png')}}" align="left" width="60" height="60" />
+                <a class="navbar-brand" href="/"><b>FlipZon</b></a>
+                <a class="navbar-brand" href="/Home"><b>Home</b></a>
+                <a class="navbar-brand" href="/Contact Us"><b>Contact Us</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                </div>
+            </div>
+            <!-- <form class="grid" action="/mobiles" method="POST">
+                {% if name %}
+                <center>
+                  <h3 style="color: #F98B1D;" class="let_space">{{name}}&nbsp;</h3>
+                </center>
+                {% endif %}
+              </form> -->
+            <img src="{{url_for('static', filename='user.png')}}" align="right" width="40" height="40" />
+            <p>&nbsp;</p>
+        </nav>
+        <div class="div1">
+            <ul>
+                <li><a href=""><img src="{{url_for('static', filename='ikea.png')}}" align="right"/></a></li>
+                <li><a href=""><img src="{{url_for('static', filename='godrej.png')}}" align="right"/></a></li>
+                <li><a href=""><img src="{{url_for('static', filename='relax.png')}}" align="right"/></a></li>
+                <li><a href=""><img src="{{url_for('static', filename='truex.png')}}" align="right"/></a></li>
+                <li><a href=""><img src="{{url_for('static', filename='bern.png')}}" align="right"/></a></li>
+            </ul>
+            <!-- <label class="tsize"><strong>Samsung</strong></label>
+            <label class="tsize"><strong>Apple</strong></label>
+            <label class="tsize"><strong>OnePlus</strong></label>
+            <label class="tsize"><strong>Redmi</strong></label>
+            <label class="tsize"><strong>Motorola</strong></label> -->
+            <hr>
+        </div>
+        <div class="divm">
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='bed2.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 50,000</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Wakefit Bed | Double Bed, Queen Size Bed</strong></p>
+                        <p> Colour: Brown</p>
+                        <p>Size: Queen</p>
+                        <p>Material: Engineered Wood</p>
+                        <p>Product: Dimensions	2.1L x 1.57W x 0.8H Meters</p>
+                        <p>Style: Taurus With Storage</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='book shelf.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 33,339</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>White Multi-Compartment BookShelf</strong></p>
+                        <p>Color: White</p>
+                        <p>Sleek and Modern Design With Good Durability</p>
+                        <p>Large Storage Bookcase: Features 12 open shelving spaces this bookshelf provides ample space for placing and organizing your books, plants, and collections.</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='brown rug.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 3,990</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Zesture Bring Home Vintage Persian Design Jacquard Weaved Foldable Chenille Multipurpose Living Room Carpet, Area Rug</strong></p>
+                        <p>Color: Brown</p>
+                        <p>Product Dimensions	137.2L x 184W Centimeters</p>
+                        <p>Material Used : High Quality Twisted Valvet chennile yarn to give a luxurious look to your flooring area</p>
+                        <p>Easily foldable so that you can carry it anywhere like outings ,picnics , praying , doing yoga.</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='carpet.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 9,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>INDIAN ORIENTAL RUGS Hand Tufted Floral Design Carpets for Living Room-Bedroom & Hall ( White, 4 X 6 Feet)</strong></p>
+                        <p>Color: White </p>
+                        <p>Pattern: FLORAL</p>
+                        <p>Material : Wool Blend, Wool</p>
+                        <p>Hand Tufted, Material: 100% Wool, Size: 4x6 in Feet, 120x180 in Cm, Its washable and Durable, Made in India</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb1">
+                <div><img src="{{url_for('static', filename='chair.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 10,,490</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Faux Leather 1 (One) White Chair for Cafe, Office, Hotel, Home, Living Room, Dining Room, Bed Room, Side Chair, Accent Chair Modern & Designer Chair</strong></p>
+                        <p>Color: White</p>
+                        <p>Dimensions: 16.14 inches x 18.5 inches x 27.16 inches</p>
+                        <p>Frame Material: Metal, Beech, Wood, Polypropylene.</p>
+                        <p>Special Features: Its Modern Look, Sweet Velour Seat and the Durable Metal Crossing at the Legs Makes This Chair a Perfect Addition to Any Stylish and Modern Dining Room</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='garden table set.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 25,000</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>4 Seater Dining Table</strong></p>
+                        <p>Color: Natural Honey Finish</p>
+                        <p>Product Dimensions: Table Dimensions: Length (99.06 CM), Width (99.06 CM), Height (76.2CM); Chair: Length ( 45 CM), Width ( 45 CM), Height (90 CM)</p>
+                        <p>Product Material: Solid Sheesham Wood, Colour: Natural Honey Finish</p>
+                        <p>Style: Contamporary, Seating Capacity: 4 Seater</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='hglamp.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 13,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>AYMH Circular Shaped Light, Hanging Lamp, 10"</strong></p>
+                        <p>Color : White and Gold</p>
+                        <p>Material	: Metal</p>
+                        <p>CLASSIC DESIGN : Illuminate your dining room or living room with this striking cluster pendant features three graduated Steel Mesh Hanging lights suspended from a round plate on black-finished rods artfully displayed at different heights.</p>
+                        <p>DECORATION : Best suited for Dining Room, Bedroom, Living Room, Bar, Restaurants, Study Room, Aisle, Corridor, Coffee Shop.</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='hglamp2.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 5,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>WOODLAB Ripe Circular  Pendant Lamp</strong></p>
+                        <p>Color: Rose Gold</p>
+                        <p>Style : Modern</p>
+                        <p>Material : Metal</p>
+                        <p>Room Type : Kitchen, Bedroom, Living Room, Hallway, Dining Room</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='lamp.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 10,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Alpha Design Furniture Premium Lamps for Home Decoration </strong></p>
+                        <p>Color: Silver and White</p>
+                        <p>Style : Classic</p>
+                        <p>Product Dimensions	19D x 19W x 19H Centimeters</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb2">
+                <div><img src="{{url_for('static', filename='mid modern book shelf.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 22,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Wakefit Burns Engineered Wood Bookshelf, Matte Finish, Dark Walnut, Set of 1</strong></p>
+                        <p>Product dimension: Height (53.2 in) Length (49 in) width (11.8 in)Product dimension: Height (53.2 in) Length (49 in) width (11.8 in)</p>
+                        <p>MATERIAL: Particle Board (Made of premium high grade prelam engineering wood with natural wood grain finish).Product.Color: Dark Walnut, Style: Contemporary</p>
+                        <p>Unique staircase shape and contemporary home décor bookshelves</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='modern book shelf.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 28,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Nilkamal Checkers Engineered Wood 4 Tier Shelf (Brown)</strong></p>
+                        <p>Color: Black</p>
+                        <p>Product Dimensions : Width : 60 cm x Depth : 24 cm x Height : 141 cm; Product Weight : 19 Kg</p>
+                        <p>Both functional and attractive with its sleek contemporary styling</p>
+                        <p>Uniqueness and unconventional designs lie at the core of modern furniture and contemporary home decor</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='sidelamp.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 5,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Homesake Lamp, Table Lamp, Night Lamp for Bedroom, Home Decor </strong></p>
+                        <p>Color: Meteorite Black</p>
+                        <p>Product Dimensions : 20D x 20W x 40H Centimeters</p>
+                        <p>A lovely, inexpensive, and practical table lamp to meet your basic fashion Lighting needs</p>
+                        <p>DECORATION : Best suited for Dining Room, Bedroom, Living Room, Bar, Restaurants, Study Room, Aisle, Corridor, Coffee Shop.</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='wardrobe.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 29,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>2 Door Sliding Wardrobe</strong></p>
+                        <p>Color: Natural Wood</p>
+                        <p>Product Dimensions: Length: 150 cm (59.05 inches); Width: 52.8 cm (20.78 inches); Height: 183.5 cm (72.24 inches)</p>
+                        <p>Product Desciption: 2 Door Wardrobe with a drawer, mirror and multiple shelves for organising clothes and storage</p>
+                        <p>Style: Contemporary</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='bed.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. 25,999</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p><strong>Wakeup Sheesham Solid Wood King Size Bed with Storage </strong></p>
+                        <p>Color: Browna</p>
+                        <p>Rosewood Bedroom Cot (Compartment-4, Size-78x72 Inches, Brown)</p>
+                        <p>Primary Material : Sheesham Wood (Indian Rosewood)</p>
+                        <p>Suitable Mattress Size : Mattress Length (198.12 cm), Width (182.88 cm),This mattress size is recommended for the Bed</p>
+                    </u>
+                </div>
+            </div>
+            <div class="divb3">
+                <div><img src="{{url_for('static', filename='coming-soon.png')}}" alt=""></div>
+                <div id="info">
+                    <strong>
+                        <p>Rs. ??????</p>
+                    </strong>
+                    <a href="/cart"><button class="btn btn-secondary btn-sm">Buy Now</button></a>
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Details
+                    </button>
+                    <ul class="dropdown-menu">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </ul>
+                </div>
+            </div>
+            <div id="btn">
+                <a href="/mobiles"><button>1</button></a>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
